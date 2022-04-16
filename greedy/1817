@@ -1,0 +1,20 @@
+import sys
+
+n, m = map(int, sys.stdin.readline().split())
+
+cnt = 1
+sum = 0
+
+if n == 0:
+    print(0)
+else:
+    weight = list(map(int,sys.stdin.readline().split()))
+
+    for i in range(n):
+        if sum + weight[i] <= m:
+            sum += weight[i]
+        else:
+            sum = 0
+            sum += weight[i]
+            cnt += 1
+    print(cnt)
