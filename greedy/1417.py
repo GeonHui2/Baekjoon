@@ -3,8 +3,7 @@ import sys
 n = int(sys.stdin.readline())
 vote = []
 for i in range(n):
-    a = int(sys.stdin.readline())
-    vote.append(a)
+    vote.append(int(sys.stdin.readline()))
 
 cnt = 0
 dasom = vote.pop(0)
@@ -18,4 +17,3 @@ if len(vote) != 0:
     print(cnt)
 else:
     print(0)
-
