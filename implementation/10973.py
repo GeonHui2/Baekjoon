@@ -5,7 +5,7 @@ result = list(map(int, sys.stdin.readline().split()))
 
 for i in range(n - 1, 0, -1):
     if result[i] < result[i - 1]:
-        x, y = i - 1, i
+        x = i - 1
         for j in range(n - 1, 0, -1):
             if result[j] < result[x]:
                 result[j], result[x] = result[x], result[j]
