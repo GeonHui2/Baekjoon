@@ -1,1 +1,1 @@
-# Baekjoon
+# Baekjoon Algorithm Study
